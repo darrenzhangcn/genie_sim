@@ -7,7 +7,7 @@
 
 set -e  # Exit on error
 
-REPO_URL="https://github.com/Physical-Intelligence/openpi.git"
+REPO_URL="git@github.com:darrenzhangcn/openpi.git"
 BRANCH="kevin/pi05-support"
 
 # Get the script directory and project root
@@ -47,7 +47,7 @@ git apply $SCRIPT_DIR/infer_changes.patch
 echo "Successfully deployed local infer files"
 
 mkdir -p $TARGET_DIR/checkpoints/select_color
-mkdir -p $TARGET_DIR/checkpoints/size_recogize
+mkdir -p $TARGET_DIR/checkpoints/recognize_size
 mkdir -p $TARGET_DIR/checkpoints/grasp_targets
 mkdir -p $TARGET_DIR/checkpoints/organize_items
 

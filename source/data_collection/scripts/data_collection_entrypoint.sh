@@ -4,6 +4,9 @@
 # This script starts both data_collector_server.py and run_data_collection.py
 # Usage: ./data_collection_entrypoint.sh [--headless] [--no-record] [--task TASK_PATH]
 
+#darren
+/isaac-sim/python.sh -m pip install packaging -t /isaac-sim/exts/omni.isaac.core_archive/pip_prebundle/
+
 set -eo pipefail
 
 # Default values
